@@ -61,3 +61,10 @@ You can create a build and deploy this function with the following command:
 ```bash
 npm run deploy
 ```
+
+This will deploy the function to a twil.io subdomain with a "dev" suffix. If you want to promote this to production, run:
+
+```bash
+npm run deploy:prod
+```
+

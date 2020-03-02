@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "twilio-run",
     "deploy": "twilio-run deploy",
-    "deploy:prod": "twilio-run promote --production"
+    "deploy:prod": "twilio-run promote --production --from=dev --create-environment"
   },
   "devDependencies": {
     "twilio-run": "^2.0.0"
