@@ -1,6 +1,6 @@
 # Opening Doors with JSON Web Tokens
 
-This is a Twilio Function to be used to add recipients to messages from the door using [jsonbox.io](https://jsonbox.io/).
+This is a Twilio Function to be used to add recipients to messages from the door using [jsonbin.io](https://jsonbin.io/).
 
 ## Setting up the function
 
@@ -22,7 +22,7 @@ This Function expects the following environment variables set:
 | :------------ | :------------------------------------------------------------------------------------- | :------- |
 | `ACCOUNT_SID` | Your Twilio Account SID found on [your Twilio console](https://www.twilio.com/console) | Yes      |
 | `AUTH_TOKEN`  | Your Twilio Auth Token found on [your Twilio console](https://www.twilio.com/console)  | Yes      |
-| `JSONBOX_ID`  | The ID of your [jsonbox.io](https://jsonbox.io/) box                                   | Yes      |
+| `JSONBIN_KEY` | The ID of your [jsonbin.io](https://jsonbin.io/) box                                   | Yes      |
 
 ### Run the function locally
 
@@ -67,4 +67,3 @@ This will deploy the function to a twil.io subdomain with a "dev" suffix. If you
 ```bash
 npm run deploy:prod
 ```
-
