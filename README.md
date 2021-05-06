@@ -22,7 +22,7 @@ This Function expects the following environment variables set:
 | :------------ | :------------------------------------------------------------------------------------- | :------- |
 | `ACCOUNT_SID` | Your Twilio Account SID found on [your Twilio console](https://www.twilio.com/console) | Yes      |
 | `AUTH_TOKEN`  | Your Twilio Auth Token found on [your Twilio console](https://www.twilio.com/console)  | Yes      |
-| `JSONBIN_KEY` | The ID of your [jsonbin.io](https://jsonbin.io/) box                                   | Yes      |
+| `JSONBIN_KEY` | The API KEY for your [jsonbin.io](https://jsonbin.io/) box                             | Yes      |
 
 ### Run the function locally
 
