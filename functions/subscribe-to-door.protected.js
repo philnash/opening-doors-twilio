@@ -1,16 +1,23 @@
-const got = require('got');
+const got = require("got");
 
-exports.handler = async function(context, event, callback) {
+exports.handler = async function (context, event, callback) {
   const twiml = new Twilio.twiml.MessagingResponse();
   const number = event.From;
   const name = event.Body;
   try {
-    await got.post(`https://jsonbox.io/${context.JSONBOX_ID}/door`, {
+    const content = {
+      headers: {
+        "X-Master-key": context.JSONBIN_KEY,
+      },
       json: { number, name },
-      responseType: 'json'
-    });
+      responseType: "json",
+    };
+    await got.put(
+      `https://api.jsonbin.io/v3/b/608f8f7ad64cd16802a79ff7`,
+      content
+    );
     callback(null, twiml);
-  } catch(e) {
+  } catch (e) {
     callback(e);
   }
 };
